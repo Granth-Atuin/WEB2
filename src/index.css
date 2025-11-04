@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ocultar scrollbars */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Para asegurar que el carrusel no se superponga al carrito */
+.carousel-container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Flechas del carrusel debajo del carrito */
+.carousel-btn {
+    z-index: 10;
+}
+
+/* Carrito siempre por arriba */
+.cart-panel {
+    z-index: 9999 !important;
+}
